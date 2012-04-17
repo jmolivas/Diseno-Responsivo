@@ -1,8 +1,8 @@
 ##Display Suite
 
 #Slides para charla 
-	--Omega diseño responsivo
- 	--Drupal Summit Latino, Guadalajara 2012
+	--Diseño responsivo
+ 	--Drupal Camp, Costa Rica 2012
 
 
 #Notes
