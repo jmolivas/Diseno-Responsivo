@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<link rel="apple-touch-icon" href="resources/images/icon@2x.png"/>
+	<link rel="apple-touch-startup-image" href="resources/images/splash.png" />
+	<title>Diseño Responsivo - </title>
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Bitter:400&amp;subset=latin" media="all" />
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+	<link rel="stylesheet" href="kinout/stylesheets/css/reset.css">
+	<link rel="stylesheet" href="kinout/stylesheets/css/layout.css">
+	<link rel="stylesheet" href="kinout/stylesheets/css/widgets.css">
+	<link rel="stylesheet" href="assets/css/custom.css">
+</head>
+
+<body>
+	<div class="kinout">
+		<section>
+			<h1>Diseño Responsivo</h1>
+		</section>
+		<section>
+			<p>
+				<br/>
+				<h2>Diseño Responsivo</h2>
+			</p>
+			<br/>
+			<h4>DrupalCamp Costa Rica 2012</h4>
+		</section>
+
+		<section>
+			<h2>Acerca de mí</h2>
+			<article>
+				<p class="vertical">
+					<img src="assets/images/real-me-blog.jpg" class="bordered size_256 center center image-shadow">
+				</p>
+				<p class="vertical">Mi nombre es Jesús Manuel Olivas</p>
+				<p class="vertical">Me pueden encontrar en twitter como <strong>@jmolivas</strong><br/>
+				En mi blog http://jmolivas.com</p>
+			</article>
+		</section>
+
+		<section>
+			<h2>Algo más...</h2>
+			<article>
+				<p class="vertical">Relativamente nuevo en Drupal desde principios de 2010 trabajando con este framework.</p>
+				<p class="vertical">Tengo ese mismo tiempo programando con PHP y con symfony2 en fechas recientes.</p>
+				<p class="vertical">Próximamente :</p>
+				<p class="vertical">@hechoendrupal  <br/> http://hechoendrupal.com</p>
+			</article>
+		</section>	
+
+		<section>
+			<h2>¿ Qué es diseño responsivo ?</h2>
+			<article>
+				<p class="left small">Se define como Diseño Responsivo Web o por sus siglas en ingles RWD (Responsive Web Design).</p>
+				<p class="left small">Una forma de desarrollar sitios web asegurando, que el diseño está optimizado para que el formato se ajuste en relación al tamaño de la pantalla del dispositivo mediante el uso de las siguientes técnicas:<br/><br/></p>
+				<ul>
+					<li class="left small">Un grid flexible en esta ocación hablaremos de 960gs.</li>
+					<li class="left small">Imágenes flexibles que se ajustan a un contexto fluido.</li>
+					<li class="left small">CSS3 Media queries, que optimizan el diseño para diferentes contextos.</li>
+				</ul>	
+			</article>
+		</section>
+
+		<section>
+			<h2>Diferentes maneras de proveer soluciones móviles.</h2>
+			<article>
+				<ul>
+					<li class="left small">Aplicaciones Nativas.</li>
+					<li class="left small">Aplicaciones web HTML5 & CSS3.</li>
+					<li class="left small">Versión móvil del sitio.</li>
+					<li class="left small">Diseño responsivo (RWD mobile first).</li>
+					<li class="left small">Diseño responsivo  + componentes del lado del servidor (RESS).</li>
+				</ul>	
+			</article>
+		</section>
+
+		<section>
+			<h2>Aplicaciones Nativas.</h2>
+			<article>
+				<ul>
+					<li class="left small">Aplicacion optimizada para una plataforma.</li>
+				</ul>	
+			</article>
+		</section>
+
+		<section>
+			<h2>Aplicaciones web HTML5 & CSS3.</h2>
+			<article>
+				<ul>
+					<li class="left small"></li>
+				</ul>	
+			</article>
+		</section>		
+
+		<section>
+			<h2>Versión móvil del sitio.</h2>
+			<article>
+				<ul>
+					<li class="left small"></li>
+				</ul>	
+			</article>
+		</section>
+
+		<section>
+			<h2>Diseño responsivo (RWD mobile first).</h2>
+			<article>
+				<ul>
+					<li class="left small"></li>
+				</ul>	
+			</article>
+		</section>
+
+		<section>
+			<h2>Diseño responsivo  + componentes del lado del servidor (RESS).</h2>
+			<article>
+				<ul>
+					<li class="left small"></li>
+				</ul>	
+			</article>
+		</section>				
+
+		<section>
+			<h2>¿ Cuando es necesario pensar en diseño responsivo ?</h2>
+			<article>
+				<ul>
+					<li class="left small">Estas pensando rediseñar o iniciar un sitio desde cero. Es necesario estalecer esto al momento de elegir el tema base sobre el cual se implementará el sitio.</li>
+					<li class="left small">Quieres reducir costos de implementación y mantenimiento. Es mas caro mantener una versión movil del sitio ya que practicamente existe la necesidad de mantener dos sitios por separado. En el caso de un sitio responsivo se comprate  código.</li>
+					<li class="left small">Quieres soportar nuevos dispositivos cuando estos aparezcan en el mercado.</li>
+				</ul>	
+			</article>
+		</section>
+
+		<section>
+			<h2>¿ Qué es y como funciona un sistema de grid como 960 ?</h2>
+			<article>
+				<p class="left small">
+				Un CSS Grid Framework es una herramienta que nos facilita el maquetado y el desarrollo de un sitio web al proveernos una guía sobre la cual trabajar. 
+				</p>
+				<p class="left small">
+				Esta guía consiste en un sistema de columnas, espacios y márgenes que nos ayudan a posicionar los bloques de contenido de nuestro diseño de manera rápida y organizada.<br/><br/>
+				</p>
+				<a href="http://960.gs">http://960.gs</a>
+				</p>
+			</article>
+		</section>
+
+		<section>
+			<h2> ¿ Imagenes flexibles ó adaptivas ? </h2>
+			<article>
+				<p class="left small">Es una práctica común definir instrucciones en las propiedades de clases dentro de las hojas de estilo para ajustar las imagenes en relación al tamaño del contenedor.
+				</p>
+				<p><a href="http://filamentgroup.com/examples/responsive-images">http://filamentgroup.com/examples/responsive-images</a><br/><br/></p>
+				<p class="left small">Es importante servir las imágenes adecuadas en relación al tamaño del dispositivo que esta consultado el sitio, regularmente la velocidad de coneccion en los dispositivos móviles es menor.
+				</p>
+				<p> 
+				<p><a href="http://adaptive-images.com">http://adaptive-images.com</a></p>
+				</p>
+			</article>
+		</section>
+
+
+		<section>
+			<h2>¿CSS3 Media queries que son y como funcionan ?</h2>
+			<article>
+				<p class="left small">Son instrucciones condicionantes para determinar que hoja de estilo ó cuales clases dentro de esta seran las que se utilizen.
+				</p>
+				<code>
+					<pre>&lt;link rel="stylesheet" href="style.css" <br/> media="(min-width: 960px)"&gt;</pre>
+					<pre>@media screen and (min-width: 960px) { <br/>// definición de clases y atributos.<br/>}</pre>
+				</code>
+			</article>
+		</section>	
+
+		<section>
+			<h2>¿Cuales son los Viewports mas comunes basados en los dispositivos actuales ?</h2>
+			<article>
+				<p class="left">Unidad de medida en pixeles</p>
+				<ul>
+					<li class="left small">320x480 - Smartphone portrait.</li>
+					<li class="left small">480x320 - Smartphone landscape.</li>
+					<li class="left small">768x1024 - Tablet portrait </li>
+					<li class="left small">1024x768 - Tablet landscape, Netbook, Laptop & Desktop.</li>
+					<li class="left small">Mayor 1024x768 - Laptop & Desktop.</li>
+				</ul>
+			</article>
+		</section>
+
+		<section>
+			<h2>¿Qué es un breakpoint ?</h2>
+			<article>
+			</article>
+		</section>
+
+		<section>
+			<h2>¿Que puede hacer Omega por mí ?</h2>
+			<article>
+			<ul>	
+				<li class="left small">Estas pensando rediseñar o iniciar un sitio en Drupal que se ajuste y pueda servir contenido a diferentes dispositivos a la vez, utilizando el mismo código base ó simplemente deseas tener las bases para poder generar un sitio responsivo en Drupal.</li>
+				<li class="left small">Estas interesado en conocer como funciona el tema Omega y su configuración, conocer como crear un subtema para lograr un sitio responsivo.</li>
+				<li class="left small">Estas interesado en conocer que módulos adicionales puedes utilizar para agregar funcionalidad responsiva-adaptiva para multimedia imágenes y video.<br/><br/></li>
+			</ul>			
+			<a href="http://drupal.org/project/omega">http://drupal.org/project/omega</a>
+			</article>
+		</section>		
+
+		<section>
+			<h2>¿ Qué ofrece Omega Theme ?</h2>
+			<article>
+				<p class="left small">
+				Hay muchas ventajas estéticas y de diseño que obtendremos al usar un framework, entre las cuales puedo mencionar las siguientes:</p>
+				<ul>
+				<li class="left small">Uniformidad y consistencia en la posición de los elementos.</li>
+				<li class="left small">Elimina el uso de tablas.</li>
+				<li class="left small">Soporte para múltiples navegadores y pantallas.</li>
+				<li class="left small">Provee una base de css con la cual trabajar rápidamente, ahorrando el tiempo necesario para construir una.</li>
+				<li class="left small">Cohesion visual entre los elementos de la página.</li>
+				<li class="left small">Fácil de implementar y mantener.</li>
+				</ul>
+				</p>
+			</article>
+		</section>		
+
+		<section>
+			<h2>¿ Cómo crear un subtema ?</h2>
+			<article>
+				<h4>The easy-peasy way (drush + omega_tools module)</h4>
+				<br/>
+				<code>
+					drush omega-subtheme "Subtheme Name" [html5] <br/><br/>
+					drush omega-subtheme "Subtheme Name" xhtml <br/>
+				</code>
+			</article>
+		</section>
+
+		<section>
+			<h2>¿ Cómo activar funcionalidad responsiva ?</h2>
+			<article>
+				<p class="vertical">
+					admin/appearance/settings/nombre_tema
+					<img src="assets/images/theme-enable-responsive.png" class="bordered center image-shadow">
+				</p>
+			</article>
+		</section>
+
+		<section>
+			<h2>Depurar : Activando columnas</h2>
+			<article>
+				<p class="vertical">
+					Una buena manera de depurar y probar es mostrar las columnas.
+					<img src="assets/images/theme-debug.png" class="bordered center image-shadow">
+				</p>
+			</article>
+		</section>
+
+		<section>
+			<h2>La importancia las etiquetas y como evitar la div-itis.</h2>
+			<article>
+				<h3>Módulo fences</h3>
+				<p class="vertical">
+				
+				</p>
+			</article>
+		</section>
+
+		<section>
+			<h2 class="medium">Módulos adicionales para agregar funcionalidad responsiva/adaptiva.</h2>
+			<article>
+				<p class="vertical">
+					<h4>Imágenes : <mark>Client-side adaptive image</mark></h4>
+					<code>http://drupal.org/project/cs_adaptive_image</code>				
+					<h4>Videos : <mark>FitVids</mark></h4>
+					<code>http://drupal.org/project/fitvids</code>
+					<h4>Slider : <mark>Slider</mark></h4>
+					<code>http://drupal.org/project/flexslider</code>
+				</p>
+			</article>
+		</section>
+
+		<section>
+			<h2 class="medium">¿ Cómo ocultar un bloque cuando la medida es menor a la de una "tablet" ?</h2>
+			<article>
+				<p class="small letf"> 
+					Omega utiliza un método llamado "Mobile first" para responder ante las diferentes medidas de los dispositivos. Para ocultar el bloque por defecto utilizamos la hoja de estilo llamada global.css
+				</p>
+				<code>.flexslider { display:none; }
+				</code>
+				<br/><br/>
+				<p class="small letf">
+					Para mostrarlo en resolución igual ó mayor a una "tablet" utilizamos la hoja llamada theme_name-alpha-default-narrow.css
+				</p>
+				<code>
+					.flexslider { display:block; }
+				</code>
+			</article>
+		</section>
+
+		<section>
+			<h2>Ejemplos de sitios que implementan esta funcionalidad</h2>
+			<article>
+				<p><a href="http://fourkitchens.com" target="_blank">http://fourkitchens.com</a></p>
+				<p><a href="http://omega.developmentgeeks.com" target="_blank">http://omega.developmentgeeks.com</a></p>
+				<p><a href="http://drupalcampnh.org/" target="_blank">http://drupalcampnh.org</a></p>
+				<p><a href="http://palantir.net" target="_blank">http://palantir.net</a></p>			
+			</article>
+		</section>		
+
+		<section>	
+			<h2 class="medium"> Referencias </h2>
+			<article>				
+				<p class="left small">
+					Entrada en blog de Rootstack, compañía de desarrollo de software en Panamá<br/>
+					<a href="http://rootstack.com/es/blog/usando-un-css-grid-framework-la-hora-de-dise%C3%B1ar" target="_blank">Usando un CSS Grid Framework a la hora de diseñar</a>
+				</p>
+				<p class="left small ">
+					Slides hechas con kinout<br/>
+					<a href="https://github.com/soyjavi/kinout">kinout on github</a>
+				</p>
+				<p class="left small ">
+					Tipografías utlizadas Bitter & Open Sans<br/>
+					<a href="http://www.google.com/webfonts/specimen/Bitter">Open Sans en google webfont directory</a><br/>
+					<a href="http://www.google.com/webfonts/specimen/Open+Sans">Bitter en google webfont directory</a><br/>
+				</p>
+				</p>
+			</article>
+		</section>
+
+		<section>
+			<h2 class="medium"> Demostración </h2>
+			<article>
+				<h3>Gracias</h3>
+				<p class="vertical">
+					<img src="assets/images/real-me-blog.jpg" class="bordered center image-shadow">
+				</p>
+				<p>Drupal Summit Latino, Guadalajara 2012</p>
+				<p class="vertical">Jesús Manuel Olivas | @jmolivas | http://jmolivas.com</p>
+			</article>
+		</section>	
+
+	</div>
+
+	<script src="kinout/javascripts/Kinout.js"></script>
+	<script src="kinout/javascripts/Kinout.Core.js"></script>
+	<script src="kinout/javascripts/Kinout.Dom.js"></script>
+	<script src="kinout/javascripts/Kinout.Router.js"></script>
+	<script src="kinout/javascripts/Kinout.Events.js"></script>
+	<script src="kinout/javascripts/Kinout.Url.js"></script>
+	<script src="kinout/javascripts/Kinout.View.js"></script>
+
+	<script>
+		KINOUT.Core.init({ template: 'circle' });
+	</script>
+</body>
+</html>
