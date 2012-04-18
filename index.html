@@ -42,7 +42,7 @@
 		</section>
 
 		<section>
-			<h2>Algo más...</h2>f
+			<h2>Algo más...</h2>
 			<article>
 				<p class="vertical">Relativamente nuevo en Drupal desde principios de 2010 trabajando con este framework.</p>
 				<p class="vertical">Tengo ese mismo tiempo programando con PHP y con symfony2 en fechas recientes.</p>
@@ -116,7 +116,7 @@
 				</div>
 				<div class="row">
 					<div class="small column_25">RWD</div>
-					<div class="small column_75">Mayor variación en las capacidades graficas, no todas las plataformas pueden ser capaces de ejecutar animaciones, "fallbacks" se deben implemntar para algunas de las características gráficas.</div>
+					<div class="small column_75">Mayor variación en las capacidades graficas, no todas las plataformas pueden ser capaces de ejecutar animaciones, se deben implementar "fallbacks" para algunas de las características gráficas.</div>
 				</div>
 			</article>
 		</section>
@@ -124,9 +124,7 @@
 		<section>
 			<h2>Diseño responsivo  + componentes del lado del servidor (RESS).</h2>
 			<article>
-				<ul>
-					<li class="left small"></li>
-				</ul>	
+					
 			</article>
 		</section>				
 
@@ -144,31 +142,32 @@
 		<section>
 			<h2>¿ Mobile first => Content first ?</h2>
 			<article>
-				<p class="small">	
-					Field-based responsive layouts means “responsive content” <br/>
-					Drupal 7 assumes the worst ( Multi-value, plain text ﬁelds with label )<br/>
+				<p class="small">
+					Diseño basado en campos de entidad/nodo significa contenido responsivo<br/>
+					Drupal 7 assumes lo peor ( Campo de texto multi-valor con un etiqueta )<br/>
 					<div class="box">
-					<code class="small left">		
-						<div>&lt;div class="field-NAME etc"&gt;</div>
-						<div>&nbsp;&lt;div class="field-label"&gt;</div>
-						<div>&nbsp; &nbsp;LABEL:&amp;nbsp;</div>
-						<div>&nbsp;&lt;/div&gt;</div>
-						<div>&nbsp;&lt;div class="field-items"&gt;</div>
-						<div>&nbsp; &nbsp;&lt;div&gt;VALUE 1&lt;/div&gt;</div>
-						<div>&nbsp; &nbsp;&lt;div&gt;VALUE 2&lt;/div&gt;</div>
-						<div>&nbsp;&lt;/div&gt;</div>
-						<div>&lt;/div&gt;</div>				
-					</code>
-				</div>
+						<code class="small left">		
+							<div>&lt;div class="field-NAME etc"&gt;</div>
+							<div>&nbsp;&lt;div class="field-label"&gt;</div>
+							<div>&nbsp; &nbsp;LABEL:&amp;nbsp;</div>
+							<div>&nbsp;&lt;/div&gt;</div>
+							<div>&nbsp;&lt;div class="field-items"&gt;</div>
+							<div>&nbsp; &nbsp;&lt;div&gt;VALUE 1&lt;/div&gt;</div>
+							<div>&nbsp; &nbsp;&lt;div&gt;VALUE 2&lt;/div&gt;</div>
+							<div>&nbsp;&lt;/div&gt;</div>
+							<div>&lt;/div&gt;</div>				
+						</code>
+					</div>
 				</p>
 			</article>
-		</section>
+		</section>	
 
 		<section>
 			<h2>La importancia las etiquetas y como evitar la div-itis.</h2>
 			<article>
-				<p class="small">	
-				Módulo fences assumes the norm ( There’s already markup in your ﬁeld content ) <br/>
+				<p class="small">
+					Módulo fences asume la norma ( Ya existe markup en el contenido de tu campo )
+					
 					<div class="box">
 						<code class="small left">	
 							<div>&lt;h3 class="field-label"&gt;</div>
@@ -177,11 +176,60 @@
 							<div>&lt;ELEMENT class="field-NAME etc"&gt;</div>
 							<div>&nbsp; VALUES</div>
 							<div>&lt;/ELEMENT&gt;</div>
-						</code>			
+						</code>		
 					</div>
+
+				</p>
+				<p class="small">
+						<a href="http://drupal.org/project/fences">http://drupal.org/project/fences</a>
+				</p>				
+			</article>
+		</section>
+
+		<section>
+			<h2>HTML 5 y CSS3</h2>
+			<article>
+				<p class="small">
+						HTML5 Tools<br/>
+						<a href="http://drupal.org/project/html5_tools">http://drupal.org/project/html5_tools</a>
+				</p>
+				<br/>
+				<p class="small">
+						LESS CSS Preprocessor<br/>
+						<a href="http://drupal.org/project/less">http://drupal.org/project/less</a>
+				</p>
+				<br/>
+				<p class="small">
+						SASS / SCSS<br/>
+						<a href="http://drupal.org/project/sass">http://drupal.org/project/sass</a>
 				</p>
 			</article>
-		</section>		
+		</section>
+
+		<section>
+			<h2>View Modes con Display Suite/Panels.</h2>
+			<article>
+				<p class="smal let">
+					<div class="box">
+						<code class="small left">
+							<div>&lt;article&gt;</div>
+							<div>&nbsp; &lt;header&gt;</div>
+							<div>&nbsp; &nbsp; &lt;h1&gt;&lt;/h1&gt;</div>
+							<div>&nbsp; &nbsp; &lt;time pubdate="pubdate"&gt;&lt;/time&gt; &nbsp;</div>
+							<div>&nbsp; &lt;/header&gt;</div>
+							<div>&nbsp; &lt;section&gt;</div>
+							<div>&nbsp; &nbsp; &lt;h2&gt;&lt;/h2&gt;</div>
+							<div>&nbsp; &nbsp; &lt;p&gt;&lt;/p&gt;</div>
+							<div>&nbsp; &nbsp;&lt;/section&gt;</div>
+							<div>&nbsp; &nbsp;&lt;footer&gt;</div>
+							<div>&nbsp; &nbsp;&lt;/footer&gt;</div>
+							<div>&lt;/article&gt;</div>
+						</code>
+					</div>
+				</p>
+				</pre>					
+			</article>
+		</section>			
 
 		<section>
 			<h2>¿ Qué es y como funciona un sistema de grid como 960 ?</h2>
