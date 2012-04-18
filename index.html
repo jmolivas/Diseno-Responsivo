@@ -140,98 +140,6 @@
 		</section>
 
 		<section>
-			<h2>¿ Mobile first => Content first ?</h2>
-			<article>
-				<p class="small">
-					Diseño basado en campos de entidad/nodo significa contenido responsivo<br/>
-					Drupal 7 assumes lo peor ( Campo de texto multi-valor con un etiqueta )<br/>
-					<div class="box">
-						<code class="small left">		
-							<div>&lt;div class="field-NAME etc"&gt;</div>
-							<div>&nbsp;&lt;div class="field-label"&gt;</div>
-							<div>&nbsp; &nbsp;LABEL:&amp;nbsp;</div>
-							<div>&nbsp;&lt;/div&gt;</div>
-							<div>&nbsp;&lt;div class="field-items"&gt;</div>
-							<div>&nbsp; &nbsp;&lt;div&gt;VALUE 1&lt;/div&gt;</div>
-							<div>&nbsp; &nbsp;&lt;div&gt;VALUE 2&lt;/div&gt;</div>
-							<div>&nbsp;&lt;/div&gt;</div>
-							<div>&lt;/div&gt;</div>				
-						</code>
-					</div>
-				</p>
-			</article>
-		</section>	
-
-		<section>
-			<h2>La importancia las etiquetas y como evitar la div-itis.</h2>
-			<article>
-				<p class="small">
-					Módulo fences asume la norma ( Ya existe markup en el contenido de tu campo )
-					
-					<div class="box">
-						<code class="small left">	
-							<div>&lt;h3 class="field-label"&gt;</div>
-							<div>&nbsp; LABEL</div>
-							<div>&lt;/h3&gt;</div>
-							<div>&lt;ELEMENT class="field-NAME etc"&gt;</div>
-							<div>&nbsp; VALUES</div>
-							<div>&lt;/ELEMENT&gt;</div>
-						</code>		
-					</div>
-
-				</p>
-				<p class="small">
-						<a href="http://drupal.org/project/fences">http://drupal.org/project/fences</a>
-				</p>				
-			</article>
-		</section>
-
-		<section>
-			<h2>HTML 5 y CSS3</h2>
-			<article>
-				<p class="small">
-						HTML5 Tools<br/>
-						<a href="http://drupal.org/project/html5_tools">http://drupal.org/project/html5_tools</a>
-				</p>
-				<br/>
-				<p class="small">
-						LESS CSS Preprocessor<br/>
-						<a href="http://drupal.org/project/less">http://drupal.org/project/less</a>
-				</p>
-				<br/>
-				<p class="small">
-						SASS / SCSS<br/>
-						<a href="http://drupal.org/project/sass">http://drupal.org/project/sass</a>
-				</p>
-			</article>
-		</section>
-
-		<section>
-			<h2>View Modes con Display Suite/Panels.</h2>
-			<article>
-				<p class="smal let">
-					<div class="box">
-						<code class="small left">
-							<div>&lt;article&gt;</div>
-							<div>&nbsp; &lt;header&gt;</div>
-							<div>&nbsp; &nbsp; &lt;h1&gt;&lt;/h1&gt;</div>
-							<div>&nbsp; &nbsp; &lt;time pubdate="pubdate"&gt;&lt;/time&gt; &nbsp;</div>
-							<div>&nbsp; &lt;/header&gt;</div>
-							<div>&nbsp; &lt;section&gt;</div>
-							<div>&nbsp; &nbsp; &lt;h2&gt;&lt;/h2&gt;</div>
-							<div>&nbsp; &nbsp; &lt;p&gt;&lt;/p&gt;</div>
-							<div>&nbsp; &nbsp;&lt;/section&gt;</div>
-							<div>&nbsp; &nbsp;&lt;footer&gt;</div>
-							<div>&nbsp; &nbsp;&lt;/footer&gt;</div>
-							<div>&lt;/article&gt;</div>
-						</code>
-					</div>
-				</p>
-				</pre>					
-			</article>
-		</section>			
-
-		<section>
 			<h2>¿ Qué es y como funciona un sistema de grid como 960 ?</h2>
 			<article>
 				<p class="left small">
@@ -290,6 +198,119 @@
 		<section>
 			<h2>¿Qué es un breakpoint ?</h2>
 			<article>
+			</article>
+		</section>
+
+		<section>
+			<h2>HTML 5 y CSS3</h2>
+			<article>
+				<p class="small">
+						HTML5 Tools<br/>
+						<a href="http://drupal.org/project/html5_tools">http://drupal.org/project/html5_tools</a>
+				</p>
+				<br/>
+				<p class="small">
+						LESS CSS Preprocessor<br/>
+						<a href="http://drupal.org/project/less">http://drupal.org/project/less</a>
+				</p>
+				<br/>
+				<p class="small">
+						SASS / SCSS<br/>
+						<a href="http://drupal.org/project/sass">http://drupal.org/project/sass</a>
+				</p>
+			</article>
+		</section>
+
+		<section>
+			<h2 class="small">La importancia las etiquetas</h2>
+			<article>
+				<p class="smal let">
+					Utiliza View Modes en Panels o Display Suite<br/>
+					<div class="box">
+						<code class="small left">
+							<div>&lt;article&gt;</div>
+							<div>&nbsp; &lt;header&gt;</div>
+							<div>&nbsp; &nbsp; &lt;h1&gt;&lt;/h1&gt;</div>
+							<div>&nbsp; &nbsp; &lt;time pubdate="pubdate"&gt;&lt;/time&gt; &nbsp;</div>
+							<div>&nbsp; &lt;/header&gt;</div>
+							<div>&nbsp; &lt;section&gt;</div>
+							
+							<div>&nbsp; &lt;/section&gt;</div>
+							<div>&nbsp; &lt;footer&gt;</div>
+							<div>&nbsp; &lt;/footer&gt;</div>
+							<div>&lt;/article&gt;</div>
+						</code>
+					</div>
+				</p>
+				</pre>					
+			</article>
+		</section>
+
+		<section>
+			<h2>¿ Mobile first => Content first ?</h2>
+			<article>
+				<p class="small">
+					Diseño basado en campos de entidad/nodo significa contenido responsivo<br/>
+					Drupal 7 assumes lo peor ( Campo de texto multi-valor con un etiqueta )<br/>
+					<div class="box">
+						<code class="small left">		
+							<div>&lt;div class="field-NAME etc"&gt;</div>
+							<div>&nbsp;&lt;div class="field-label"&gt;</div>
+							<div>&nbsp; &nbsp;LABEL:&amp;nbsp;</div>
+							<div>&nbsp;&lt;/div&gt;</div>
+							<div>&nbsp;&lt;div class="field-items"&gt;</div>
+							<div>&nbsp; &nbsp;&lt;div&gt;VALUE 1&lt;/div&gt;</div>
+							<div>&nbsp; &nbsp;&lt;div&gt;VALUE 2&lt;/div&gt;</div>
+							<div>&nbsp;&lt;/div&gt;</div>
+							<div>&lt;/div&gt;</div>				
+						</code>
+					</div>
+				</p>
+			</article>
+		</section>			
+
+		<section>
+			<h2>Como evitar la div-itis ó div-ception</h2>
+			<article>
+				<p class="small">
+					Módulo fences asume la norma ( Ya existe markup en el contenido de tu campo )
+					
+					<div class="box">
+						<code class="small left">	
+							<div>&lt;h3 class="field-label"&gt;</div>
+							<div>&nbsp; LABEL</div>
+							<div>&lt;/h3&gt;</div>
+							<div>&lt;ELEMENT class="field-NAME etc"&gt;</div>
+							<div>&nbsp; VALUES</div>
+							<div>&lt;/ELEMENT&gt;</div>
+						</code>		
+					</div>
+
+				</p>
+				<p class="small">
+						<a href="http://drupal.org/project/fences">http://drupal.org/project/fences</a>
+				</p>				
+			</article>
+		</section>		
+
+		<section>
+			<h2>Temas con funcionalidad responsiva</h2>
+			<article>
+				<p class="small">
+					<a href="http://drupal.org/project/zen">http://drupal.org/project/zen</a>
+				</p>
+				<p class="small">
+					<a href="http://drupal.org/project/adaptivetheme">http://drupal.org/project/adaptivetheme</a>
+				</p>
+				<p class="small">
+					<a href="http://drupal.org/project/pop">http://drupal.org/project/pop</a>
+				</p>
+				<p class="small">
+					<a href="http://drupal.org/project/arctica">http://drupal.org/project/arctica</a>
+				</p>				
+				<p class="small">
+					<a href="http://drupal.org/project/omega">http://drupal.org/project/omega</a>
+				</p>
 			</article>
 		</section>
 
