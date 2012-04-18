@@ -20,3 +20,6 @@ pre, .box { background-color:#ffffff; margin-top: 8px; margin-bottom: 8px; }
 .title { padding-top: 20px; }
 .half {width:50%; display:block; float:left;}
 .wrapper{width:75%;}
+.column_25 {width:20%; display:block; float:left; padding: 5px 4px 5px 2px; text-align:left;}
+.column_75 {width:70%; display:block; float:left; padding: 5px 4px 5px 2px; text-align:left;}
+.row { border-bottom: 1px solid #999; padding: 10px; display:block; float:left; width:100%; }

@@ -42,7 +42,7 @@
 		</section>
 
 		<section>
-			<h2>Algo más...</h2>
+			<h2>Algo más...</h2>f
 			<article>
 				<p class="vertical">Relativamente nuevo en Drupal desde principios de 2010 trabajando con este framework.</p>
 				<p class="vertical">Tengo ese mismo tiempo programando con PHP y con symfony2 en fechas recientes.</p>
@@ -69,7 +69,7 @@
 			<article>
 				<ul>
 					<li class="left small">Aplicaciones Nativas.</li>
-					<li class="left small">Aplicaciones web HTML5 & CSS3.</li>
+					<li class="left small">Aplicaciones Web HTML5 & CSS3.</li>
 					<li class="left small">Versión móvil del sitio.</li>
 					<li class="left small">Diseño responsivo (RWD mobile first).</li>
 					<li class="left small">Diseño responsivo  + componentes del lado del servidor (RESS).</li>
@@ -78,38 +78,46 @@
 		</section>
 
 		<section>
-			<h2>Aplicaciones Nativas.</h2>
+			<h2>Rendimiento.</h2>
 			<article>
-				<ul>
-					<li class="left small">Aplicacion optimizada para una plataforma.</li>
-				</ul>	
+				<div class="row">
+					<div class="small column_25">App Nat</div>
+					<div class="small column_75">Aplicacion optimizada para una plataforma</div>
+				</div>
+				<div class="row">
+					<div class="small column_25">App Web</div>
+					<div class="small column_75">Aplicacion optimizada para dispositivos móviles</div>
+				</div>
+				<div class="row">
+					<div class="small column_25">Mob Ver</div>
+					<div class="small column_75">Aplicacion optimizada para dispositivos móviles</div>
+				</div>
+				<div class="row">
+					<div class="small column_25">RWD</div>
+					<div class="small column_75">Aplicacion optimizada para un gran rango de dispositivos (phone, tablet, desktop)</div>
+				</div>
 			</article>
 		</section>
 
 		<section>
-			<h2>Aplicaciones web HTML5 & CSS3.</h2>
+			<h2>Gráficos y Animación.</h2>
 			<article>
-				<ul>
-					<li class="left small"></li>
-				</ul>	
-			</article>
-		</section>		
-
-		<section>
-			<h2>Versión móvil del sitio.</h2>
-			<article>
-				<ul>
-					<li class="left small"></li>
-				</ul>	
-			</article>
-		</section>
-
-		<section>
-			<h2>Diseño responsivo (RWD mobile first).</h2>
-			<article>
-				<ul>
-					<li class="left small"></li>
-				</ul>	
+				<div class="row">
+					<div class="small column_25">App Nat</div>
+					<div class="small column_75">Aprovecha al máximo la GPU y librerías de 3D.</div>
+				</div>
+				<div class="row">
+					<div class="small column_25">App Web</div>
+					<div class="small column_75">Capacidades gráficas varían en relación a la plataforma, pero en general permita crear animaciones sin problemas.</div>
+				</div>
+				<div class="row">
+					<div class="small column_25">Mob Ver</div>
+					<div class="small column_75">Capacidades gráficas varían en relación a la plataforma, pero en general permita crear animaciones sin problemas.</div>
+				</div>
+				<div class="row">
+					<div class="small column_25">RWD</div>
+					<div class="small column_75">Mayor variación en las capacidades graficas, no todas las plataformas pueden ser capaces de ejecutar animaciones, "fallbacks" se deben implemntar para algunas de las características gráficas.</div>
+				</div>
 			</article>
 		</section>
 
@@ -132,6 +140,48 @@
 				</ul>	
 			</article>
 		</section>
+
+		<section>
+			<h2>¿ Mobile first => Content first ?</h2>
+			<article>
+				<p class="small">	
+					Field-based responsive layouts means “responsive content” <br/>
+					Drupal 7 assumes the worst ( Multi-value, plain text ﬁelds with label )<br/>
+					<div class="box">
+					<code class="small left">		
+						<div>&lt;div class="field-NAME etc"&gt;</div>
+						<div>&nbsp;&lt;div class="field-label"&gt;</div>
+						<div>&nbsp; &nbsp;LABEL:&amp;nbsp;</div>
+						<div>&nbsp;&lt;/div&gt;</div>
+						<div>&nbsp;&lt;div class="field-items"&gt;</div>
+						<div>&nbsp; &nbsp;&lt;div&gt;VALUE 1&lt;/div&gt;</div>
+						<div>&nbsp; &nbsp;&lt;div&gt;VALUE 2&lt;/div&gt;</div>
+						<div>&nbsp;&lt;/div&gt;</div>
+						<div>&lt;/div&gt;</div>				
+					</code>
+				</div>
+				</p>
+			</article>
+		</section>
+
+		<section>
+			<h2>La importancia las etiquetas y como evitar la div-itis.</h2>
+			<article>
+				<p class="small">	
+				Módulo fences assumes the norm ( There’s already markup in your ﬁeld content ) <br/>
+					<div class="box">
+						<code class="small left">	
+							<div>&lt;h3 class="field-label"&gt;</div>
+							<div>&nbsp; LABEL</div>
+							<div>&lt;/h3&gt;</div>
+							<div>&lt;ELEMENT class="field-NAME etc"&gt;</div>
+							<div>&nbsp; VALUES</div>
+							<div>&lt;/ELEMENT&gt;</div>
+						</code>			
+					</div>
+				</p>
+			</article>
+		</section>		
 
 		<section>
 			<h2>¿ Qué es y como funciona un sistema de grid como 960 ?</h2>
@@ -161,7 +211,6 @@
 			</article>
 		</section>
 
-
 		<section>
 			<h2>¿CSS3 Media queries que son y como funcionan ?</h2>
 			<article>
@@ -181,6 +230,8 @@
 				<ul>
 					<li class="left small">320x480 - Smartphone portrait.</li>
 					<li class="left small">480x320 - Smartphone landscape.</li>
+					<li class="left small">540x960 - Smartphone largescreen portrait.</li>
+					<li class="left small">960x540 - Smartphone landscape portrait.</li>
 					<li class="left small">768x1024 - Tablet portrait </li>
 					<li class="left small">1024x768 - Tablet landscape, Netbook, Laptop & Desktop.</li>
 					<li class="left small">Mayor 1024x768 - Laptop & Desktop.</li>
@@ -251,16 +302,6 @@
 				<p class="vertical">
 					Una buena manera de depurar y probar es mostrar las columnas.
 					<img src="assets/images/theme-debug.png" class="bordered center image-shadow">
-				</p>
-			</article>
-		</section>
-
-		<section>
-			<h2>La importancia las etiquetas y como evitar la div-itis.</h2>
-			<article>
-				<h3>Módulo fences</h3>
-				<p class="vertical">
-				
 				</p>
 			</article>
 		</section>
